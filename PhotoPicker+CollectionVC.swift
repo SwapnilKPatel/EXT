@@ -4,7 +4,74 @@ import Foundation
 import UIKit
 import SDWebImage
 extension PhotoPickerVC : UICollectionViewDataSource, UICollectionViewDelegateFlowLayout ,UICollectionViewDelegate  {
+    //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        <#code#>
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
     
+    
+//    func tableViewSetup()  {
+//        tableView = UITableView(frame: CGRect(x: 0,
+//                                              y: 0,
+//                                              width: SCREEN_WIDTH,
+//                                              height: SCREEN_HEIGHT  - (self.navigationController?.navigationBar.frame.height)! - 20),
+//                                              style: .plain)
+//        tableView.delegate = self
+//        tableView.dataSource = self
+//        self.view.addSubview(tableView)
+//        tableView.tableFooterView = UIView()
+//        tableView.separatorStyle = .none
+//        
+//        tableView.backgroundColor = UIColor(red: 238/255,
+//                                            green: 238/255,
+//                                            blue: 238/255,
+//                                            alpha: 1)
+//        tableView.register(UINib(nibName: "ReviewCell", bundle: nil), forCellReuseIdentifier: "ReviewCell")
+//        
+//    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        
+//        let data = reviewData!.timeline[indexPath.row]
+//        
+//        let hx = data._source?.comments.height(withConstrainedWidth: SCREEN_WIDTH - 22,
+//                                               font: .systemFont(ofSize: CGFloat(reviewsFontSize)))
+//
+//        return 54 + hx! + 50 + 20
+//    }
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return reviewData!.timeline.count
+//    }
+//    
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        
+//       
+//        var cell = (tableView.dequeueReusableCell(withIdentifier: "ReviewCell") as? ReviewCell)
+//        
+//        
+//        cell = nil
+//        
+//        if cell == nil
+//            
+//        {
+//            cell = (tableView.dequeueReusableCell(withIdentifier: "ReviewCell") as? ReviewCell)
+//            
+//        }
+//        
+//        let data = reviewData!.timeline[indexPath.row]
+//        
+//        cell?.selectionStyle = .none
+//        
+//        cell?.bindDataWithCell(data: data)
+//        
+//     //   cell?.configurImages(parentvc: self, dic: (data._source?.images)!)
+//       
+//        return cell!
+//    }
+    
+//
    
     func setupCollectionView() {
         
